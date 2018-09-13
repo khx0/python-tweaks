@@ -3,12 +3,12 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-05-04
+# date: 2018-09-13
 # file: wrap_multiparameter_functions.py
 ##########################################################################################
 
 '''
-    Using pythons lambda construct one can easily warp 
+    Using pythons lambda construct one can easily wrap 
     multiparameter functions up, once all parameters
     are fixed. In this way on can create function handles
     which can easily be called or passed to other modules
