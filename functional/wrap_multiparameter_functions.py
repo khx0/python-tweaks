@@ -39,10 +39,10 @@ if __name__ == '__main__':
     
     y_wrapped = fcall(1.0)
     
-    print "y(explicit) =", y_explicit
-    print "y(wrapped) =", y_wrapped
+    print("y(explicit) =", y_explicit)
+    print("y(wrapped) =", y_wrapped)
 
-    assert np.isclose(y_explicit, y_wrapped)
+    assert np.isclose(y_explicit, y_wrapped), "Error: Test assertion failed."
 
 
     
