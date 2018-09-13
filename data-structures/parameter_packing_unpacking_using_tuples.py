@@ -5,6 +5,8 @@
 # contact: khx0@posteo.net
 # date: 2018-09-13
 # file: parameter_packing_unpacking_using_tuples.py
+# tested with python 2.7.15
+# tested with python 3.7.0
 ##########################################################################################
 
 import time
