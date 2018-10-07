@@ -55,12 +55,4 @@ if __name__ == '__main__':
 	print(type(params))
 
 	workerThread(params)
-    
-    
-
-    
-    
-    
-    
-        
-        
+ 

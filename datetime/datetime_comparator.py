@@ -56,6 +56,3 @@ if __name__ == '__main__':
     print("time_1 > time_2", time_1 > time_2)
     print("time_1 >= time_2", time_1 >= time_2)
     print("time_1 == time_2", time_1 == time_2)
-
-
-    
