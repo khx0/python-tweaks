@@ -43,6 +43,7 @@ if __name__ == '__main__':
     # operators
     
     # self reflectiveness
+    print("time_1 == time_1", time_1 == time_1)
     print("time_1 <= time_1", time_1 <= time_1)
     print("time_1 >= time_1", time_1 >= time_1)
     
@@ -51,11 +52,10 @@ if __name__ == '__main__':
     time_2 = datetime.datetime.strptime(timeString_2, TIMESTAMP_SIGNATURE)
     
     print("time_1 < time_2", time_1 < time_2)
-    print("time_1 <= time_2",time_1 <= time_2)
-    print("time_1 > time_2",time_1 > time_2)
-    print("time_1 >= time_2",time_1 >= time_2)
-    
+    print("time_1 <= time_2", time_1 <= time_2)
+    print("time_1 > time_2", time_1 > time_2)
+    print("time_1 >= time_2", time_1 >= time_2)
+    print("time_1 == time_2", time_1 == time_2)
 
-            
 
     
