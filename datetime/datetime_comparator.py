@@ -29,7 +29,7 @@ if __name__ == '__main__':
     ######################################################################################
     # User settings:
     # To parse a timestampe string to a datetime object, you must specify the timestamp
-    # signature as exemplartory shown below.
+    # signature as exemplary shown below.
     TIMESTAMP_SIGNATURE = '%Y-%m-%d %H:%M:%S.%f'
     ######################################################################################
     
