@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-03-28
+# date: 2019-04-02
 # file: datetime_comparator.py
 # tested with python 2.7.15
 # tested with python 3.7.2
@@ -25,12 +25,23 @@ if __name__ == '__main__':
     # User settings:
     # To parse a timestampe string to a datetime object, you must specify the timestamp
     # signature as exemplary shown below.
-    TIMESTAMP_SIGNATURE = '%Y-%m-%d %H:%M:%S.%f'
+    TIMESTAMP_SIGNATURE = '%Y-%m-%d_%H:%M:%S'
     ######################################################################################
     
     now = datetime.datetime.now()
     print("now =", now)
     print("type(now) =", type(now))
+
+    timestamp_str = now.strftime(TIMESTAMP_SIGNATURE)
+    print("type(timestamp_str) =", type(timestamp_str))
+    print("timestampstr =", timestamp_str)
+
+    datetime_object = datetime.datetime.strptime(timestamp_str, TIMESTAMP_SIGNATURE)
+    print("type(datetime_object) =", type(datetime_object))
+    print("datetime_object =", datetime_object)
+
+
+
 
     # ToDo: add pytest module for the datetime examples
 
