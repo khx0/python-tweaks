@@ -28,17 +28,26 @@ if __name__ == '__main__':
     TIMESTAMP_SIGNATURE = '%Y-%m-%d_%H:%M:%S'
     ######################################################################################
     
+    # create a datetime object with the current time
     now = datetime.datetime.now()
     print("now =", now)
     print("type(now) =", type(now))
 
+    # convert the datetime object to a string using the "strftime" function
     timestamp_str = now.strftime(TIMESTAMP_SIGNATURE)
     print("type(timestamp_str) =", type(timestamp_str))
     print("timestampstr =", timestamp_str)
 
+    # conversely convert a datetime string back to a datetime object using the
+    # "strptime" function of the datetime module
     datetime_object = datetime.datetime.strptime(timestamp_str, TIMESTAMP_SIGNATURE)
     print("type(datetime_object) =", type(datetime_object))
     print("datetime_object =", datetime_object)
 
-
+    
     # ToDo: add pytest module for the datetime examples
+
+
+
+
+
