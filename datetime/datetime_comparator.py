@@ -3,10 +3,10 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2018-10-07
+# date: 2019-04-03
 # file: datetime_comparator.py
 # tested with python 2.7.15
-# tested with python 3.7.0
+# tested with python 3.7.2
 ##########################################################################################
 
 # When working with database entries, it is often necessary to compare timestamps.
@@ -14,12 +14,8 @@
 # Using the datetime module one can conveniently parse timestamp strings into
 # datetime objects, which have access to comparator operators.
 
-import datetime
 import os
-
-def ensure_dir(dir):
-    if not os.path.exists(dir):
-        os.makedirs(dir)
+import datetime
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
 DATADIR = os.path.join(BASEDIR, 'data')
@@ -28,8 +24,8 @@ if __name__ == '__main__':
 
     ######################################################################################
     # User settings:
-    # To parse a timestampe string to a datetime object, you must specify the timestamp
-    # signature as exemplary shown below.
+    # To parse a timestamp string to a datetime object (or the other way around),
+    # one can specify a timestamp signature as exemplary shown below.
     TIMESTAMP_SIGNATURE = '%Y-%m-%d %H:%M:%S.%f'
     ######################################################################################
     
