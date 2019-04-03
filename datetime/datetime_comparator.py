@@ -18,7 +18,6 @@ import os
 import datetime
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
-DATADIR = os.path.join(BASEDIR, 'data')
 
 if __name__ == '__main__':
 

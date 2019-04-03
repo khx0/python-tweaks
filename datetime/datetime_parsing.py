@@ -9,17 +9,12 @@
 # tested with python 3.7.2
 ##########################################################################################
 
-# When working with database entries, it is often necessary to compare timestamps.
-# By loading timestamps as raw text, they often exists as pure string objects.
-# Using the datetime module one can conveniently parse timestamp strings into
-# datetime objects, which have access to comparator operators.
-
 import os
 import datetime
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
 
-if __name__ == '__main__':
+def test_datetime_parsing():
 
     ######################################################################################
     # User settings:
@@ -40,14 +35,21 @@ if __name__ == '__main__':
 
     # conversely convert a datetime string back to a datetime object using the
     # "strptime" function of the datetime module
-    datetime_object = datetime.datetime.strptime(timestamp_str, TIMESTAMP_SIGNATURE)
-    print("type(datetime_object) =", type(datetime_object))
-    print("datetime_object =", datetime_object)
+    now_recovered = datetime.datetime.strptime(timestamp_str, TIMESTAMP_SIGNATURE)
+    print("type(now_recovered) =", type(now_recovered))
+    print("now_recovered =", now_recovered)
 
-    
-    # ToDo: add pytest module for the datetime examples
+    # illustrate equality between the original datetime object and the datetime object
+    # which was recovered by string parsing using strptime
+    assert now.year == now_recovered.year
+    assert now.month == now_recovered.month
+    assert now.day == now_recovered.day
+    assert now.hour == now_recovered.hour
+    assert now.minute == now_recovered.minute
+    assert now.second == now_recovered.second
 
+if __name__ == '__main__':
 
+    test_datetime_parsing()
 
-
-
+    # ToDo: pytest invocation still fails, fix it. (2019-04-03)
