@@ -3,11 +3,18 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-03
+# date: 2019-04-05
 # file: datetime_comparator.py
 # tested with python 2.7.15
 # tested with python 3.7.2
 ##########################################################################################
+
+'''
+pytest invocation:
+To run this as a pytest call
+$pytest -s datetime_parsing.py
+This was tested with pytest-4.3.1 as of 2019-04-05.
+'''
 
 import os
 import datetime
@@ -22,7 +29,7 @@ def test_datetime_parsing():
     # one can specify a timestamp signature as exemplary shown below.
     TIMESTAMP_SIGNATURE = '%Y-%m-%d_%H:%M:%S'
     ######################################################################################
-    
+
     # create a datetime object with the current time
     now = datetime.datetime.now()
     print("now =", now)
@@ -47,9 +54,9 @@ def test_datetime_parsing():
     assert now.hour == now_recovered.hour
     assert now.minute == now_recovered.minute
     assert now.second == now_recovered.second
+    
+    print("All test passed successfully.")
 
 if __name__ == '__main__':
 
     test_datetime_parsing()
-
-    # ToDo: pytest invocation still fails, fix it. (2019-04-03)
