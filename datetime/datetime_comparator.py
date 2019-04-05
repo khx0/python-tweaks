@@ -9,6 +9,15 @@
 # tested with python 3.7.2  and pytest 4.3.1
 ##########################################################################################
 
+'''
+pytest invocation:
+To run this script as a pytest, run 
+$pytest -s <MY_PYTHON_SCRIPT.py>
+or via
+$python -m pytest -s <MY_PYTHON_SCRIPT.py>
+where python is your current python interpreter.
+'''
+
 # When working with database entries, it is often necessary to compare timestamps.
 # By loading timestamps as raw text, they often exists as pure string objects.
 # Using the datetime module one can conveniently parse timestamp strings into

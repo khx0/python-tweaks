@@ -12,9 +12,9 @@
 '''
 pytest invocation:
 To run this script as a pytest, run 
-$pytest -s datetime_parsing.py
+$pytest -s <MY_PYTHON_SCRIPT.py>
 or via
-$python -m pytest -s datetime_parsing.py
+$python -m pytest -s <MY_PYTHON_SCRIPT.py>
 where python is your current python interpreter.
 '''
 
