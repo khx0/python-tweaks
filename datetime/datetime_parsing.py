@@ -23,14 +23,14 @@ import datetime
 
 BASEDIR = os.path.dirname(os.path.abspath(__file__))
 
-def test_datetime_parsing():
+##########################################################################################
+# User settings:
+# To parse a timestamp string to a datetime object (or the other way around),
+# one can specify a timestamp signature as exemplary shown below.
+TIMESTAMP_SIGNATURE = '%Y-%m-%d_%H:%M:%S'
+##########################################################################################
 
-    ######################################################################################
-    # User settings:
-    # To parse a timestamp string to a datetime object (or the other way around),
-    # one can specify a timestamp signature as exemplary shown below.
-    TIMESTAMP_SIGNATURE = '%Y-%m-%d_%H:%M:%S'
-    ######################################################################################
+def test_datetime_parsing():
 
     # create a datetime object with the current time
     now = datetime.datetime.now()
