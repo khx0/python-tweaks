@@ -14,7 +14,7 @@ pytest invocation:
 To run this script as a pytest, run 
 $pytest -s datetime_parsing.py
 or via
-$python -m pytest datetime_parsing.py
+$python -m pytest -s datetime_parsing.py
 where python is your current python interpreter.
 '''
 
