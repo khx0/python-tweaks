@@ -5,15 +5,17 @@
 # contact: khx0@posteo.net
 # date: 2019-04-05
 # file: datetime_comparator.py
-# tested with python 2.7.15
-# tested with python 3.7.2
+# tested with python 2.7.15 and pytest 4.3.1
+# tested with python 3.7.2  and pytest 4.3.1
 ##########################################################################################
 
 '''
 pytest invocation:
-To run this as a pytest call
+To run this script as a pytest, run 
 $pytest -s datetime_parsing.py
-This was tested with pytest-4.3.1 as of 2019-04-05.
+or via
+$python -m pytest datetime_parsing.py
+where python is your current python interpreter.
 '''
 
 import os
