@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-05
+# date: 2019-04-09
 # file: parameter_packing_unpacking_using_tuples.py
 # tested with python 2.7.15
 # tested with python 3.7.2
@@ -37,7 +37,7 @@ def workerThread(params):
 	return None
 
 if __name__ == '__main__':
-    
+
     # assign some dummy parameters p1, p2, p3 and store them in a tuple
 	p1 = 0.5
 
@@ -51,4 +51,3 @@ if __name__ == '__main__':
 	print(type(params))
 
 	workerThread(params)
- 

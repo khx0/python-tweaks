@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-05
+# date: 2019-04-09
 # file: datetime_comparator.py
 # tested with python 2.7.15 and pytest 4.3.1
 # tested with python 3.7.2  and pytest 4.3.1
@@ -11,7 +11,7 @@
 
 '''
 pytest invocation:
-To run this script as a pytest, run 
+To run this script as a pytest, run
 $pytest -s <MY_PYTHON_SCRIPT.py>
 or via
 $python -m pytest -s <MY_PYTHON_SCRIPT.py>
@@ -39,7 +39,7 @@ def test_datetime_comparator():
 
     timeString_1 = '2018-09-17 22:04:57.707'
     print(type(timeString_1))
-    
+
     time_1 = datetime.datetime.strptime(timeString_1, TIMESTAMP_SIGNATURE)
     print(type(time_1))
 
@@ -56,7 +56,7 @@ def test_datetime_comparator():
     print("time_1 >= time_1", time_1 >= time_1)
 
     timeString_2 = '2018-09-17 23:12:27.107'
-    
+
     time_2 = datetime.datetime.strptime(timeString_2, TIMESTAMP_SIGNATURE)
 
     assert time_1 < time_2
@@ -73,4 +73,3 @@ def test_datetime_comparator():
 if __name__ == '__main__':
 
     test_datetime_comparator()
-

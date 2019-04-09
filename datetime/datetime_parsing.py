@@ -3,7 +3,7 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-05
+# date: 2019-04-09
 # file: datetime_comparator.py
 # tested with python 2.7.15 and pytest 4.3.1
 # tested with python 3.7.2  and pytest 4.3.1
@@ -11,7 +11,7 @@
 
 '''
 pytest invocation:
-To run this script as a pytest, run 
+To run this script as a pytest, run
 $pytest -s <MY_PYTHON_SCRIPT.py>
 or via
 $python -m pytest -s <MY_PYTHON_SCRIPT.py>
@@ -56,7 +56,7 @@ def test_datetime_parsing():
     assert now.hour == now_recovered.hour
     assert now.minute == now_recovered.minute
     assert now.second == now_recovered.second
-    
+
     print("All test passed successfully.")
 
 if __name__ == '__main__':

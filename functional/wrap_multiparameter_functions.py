@@ -3,14 +3,14 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-04-05
+# date: 2019-04-09
 # file: wrap_multiparameter_functions.py
 # tested with python 2.7.15
 # tested with python 3.7.2
 ##########################################################################################
 
 '''
-    Using pythons lambda construct one can easily wrap 
+    Using pythons lambda construct one can easily wrap
     multiparameter functions up, once all parameters
     are fixed. In this way on can create function handles
     which can easily be called or passed to other modules
@@ -38,9 +38,9 @@ if __name__ == '__main__':
     fcall = lambda x: linear_model(x, m, b)
 
     y_explicit = linear_model(1.0, m, b)
-    
+
     y_wrapped = fcall(1.0)
-    
+
     print("y(explicit) =", y_explicit)
     print("y(wrapped) =", y_wrapped)
 
