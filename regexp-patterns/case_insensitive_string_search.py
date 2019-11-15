@@ -18,7 +18,7 @@ import re
 
 if __name__ == '__main__':
 
-	# test 1
+    # test 1
     full_string = 'path_to_data_set_type_c_3.dat'
 
     sub_string = 'TYPE_C'
