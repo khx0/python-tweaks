@@ -3,9 +3,8 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2019-08-23
+# date: 2020-02-22
 # file: wrap_multiparameter_functions.py
-# tested with python 2.7.15
 # tested with python 3.7.2
 ##########################################################################################
 
