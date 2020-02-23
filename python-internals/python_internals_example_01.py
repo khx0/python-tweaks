@@ -9,6 +9,7 @@
 ##########################################################################################
 
 import numpy as np
+import matplotlib as mpl
 
 if __name__ == '__main__':
 
@@ -21,7 +22,10 @@ if __name__ == '__main__':
 
     print("globals() =", globals())
 
-	print("//////////////////////////////////////")
+    print("//////////////////////////////////////")
 
-	print(np.__version__)
-	print(np)
+    print("np.__version__ =", np.__version__)
+    print(np)
+
+    print("mpl.__version__ =", mpl.__version__)
+    print(mpl)
