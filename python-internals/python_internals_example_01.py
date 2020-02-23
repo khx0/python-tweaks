@@ -5,7 +5,7 @@
 # contact: khx0@posteo.net
 # date: 2020-02-23
 # file: python_internals_example_01.py
-# tested with python 3.7.2
+# tested with python 3.7.6
 ##########################################################################################
 
 import numpy as np
