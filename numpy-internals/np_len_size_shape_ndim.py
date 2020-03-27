@@ -13,8 +13,13 @@ import numpy as np
 if __name__ == '__main__':
 
     print("running np.__version__ =", np.__version__)
-
-    # illustration of numpy's ndim shape and size methods
+    
+    '''
+    Illustration of numpy's ndim shape and size methods
+    In particular I want to show the difference between 
+    python's len(*) method applied to a numpy array 
+    compared to numpy's size method.
+    '''
 
     X = np.array([[1.0, 2.0, 3.0],
                   [4.0, 5.0, 6.0]])
@@ -39,5 +44,11 @@ if __name__ == '__main__':
     print("len =", len(X))
     print("np.shape =", X.shape)
     print("np.size =", np.size(X))
-
+    
+    X = np.ones((3, 3, 3))
+    print("X =", X)
+    print("ndim =", np.ndim(X))
+    print("len =", len(X))
+    print("np.shape =", X.shape)
+    print("np.size =", np.size(X))
 
