@@ -3,9 +3,9 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2020-02-22
+# date: 2020-03-27
 # file: wrap_multiparameter_functions.py
-# tested with python 3.7.2
+# tested with python 3.7.6
 ##########################################################################################
 
 '''
@@ -23,17 +23,17 @@ if __name__ == '__main__':
     sub_string = 'TYPE_C'
 
     if re.search(sub_string, full_string):
-    	print('{} contains {}.'.format(full_string, sub_string))
+    	print(f'{full_string} contains {sub_string}.')
 
     if re.search(sub_string, full_string, re.I):
-    	print('{} contains {} using the re.I option.'.format(full_string, sub_string))
+    	print(f'{full_string} contains {sub_string} using the re.I option.')
 
     # test 2
     full_string = 'path_to_data_set_TYPE_c_3.dat'
     sub_string = 'type_c'
 
     if re.search(sub_string, full_string):
-    	print('{} contains {}.'.format(full_string, sub_string))
+    	print(f'{full_string} contains {sub_string}.')
 
     if re.search(sub_string, full_string, re.I):
-    	print('{} contains {} using the re.I option.'.format(full_string, sub_string))
+    	print(f'{full_string} contains {sub_string} using the re.I option.')
