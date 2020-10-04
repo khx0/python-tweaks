@@ -11,13 +11,21 @@
 if __name__ == '__main__':
 
     '''
+    x // y is the python floor divide operator.
     Make sure that you are aware of the fact that -7 // 2 = -4 in python,
     while 7 // 2 = 3.
     Also make sure to have the correct operator precedence in mind and note
     the difference in the two snippets below.
     '''
 
+    # type check
+    f_value = 7.0
+    res = f_value // 2
+    print(res,  type(res))
+
     n_value = 7
+    res = n_value // 2
+    print(res,  type(res))
 
     # gives 3
     print(n_value // 2)
