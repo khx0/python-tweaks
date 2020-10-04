@@ -3,9 +3,9 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2020-03-27
+# date: 2020-10-04
 # file: datetime_comparator.py
-# tested with python 3.7.6  and pytest 5.4.1
+# tested with python 3.7.6 and pytest 6.6.1
 ##########################################################################################
 
 '''
