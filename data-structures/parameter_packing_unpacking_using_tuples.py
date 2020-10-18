@@ -49,3 +49,11 @@ if __name__ == '__main__':
 	print(type(params))
 
 	workerThread(params)
+	
+	# tuples can be defined using round brackets or equally none brackets at all
+	params = 1.0, 2.0, 'default'
+	params_2 = (1.0, 2.0, 'default')
+	print(params)
+	print(params_2)
+	print(params == params_2)
+	 
