@@ -3,9 +3,9 @@
 ##########################################################################################
 # author: Nikolas Schnellbaecher
 # contact: khx0@posteo.net
-# date: 2020-02-22
+# date: 2020-10-18
 # file: parameter_packing_unpacking_using_tuples.py
-# tested with python 3.7.2
+# tested with python 3.7.6
 ##########################################################################################
 
 import os
